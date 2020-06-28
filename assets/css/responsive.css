@@ -1,0 +1,92 @@
+@media (min-width: 1501px) and (max-width: 1827px) {
+    main {
+        margin: 16rem 5rem 16rem 5rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    main {
+        margin: 16rem 5rem 16rem 5rem;
+    }
+
+    .computation label {
+        left: 6.7rem;
+    }
+
+    .pencetgan {
+        margin-left: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 14rem 1.5rem 10rem 1.5rem;
+    }
+
+    .computation label {
+        left: 5.2rem;
+    }
+
+    aside {
+        font-size: 100%;
+        margin-left: 5px;
+    }
+
+    .pencetgan {
+        margin-left: 90px;
+    }
+
+
+}
+
+/* Tablet - Dekstop Jadul Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    .budget_app {
+        font-size: 80%;
+    }
+
+    .computation label {
+        left: 4.5rem;
+    }
+
+
+    aside {
+        font-size: 80%;
+        margin-left: 10px;
+    }
+
+    .more a {
+        padding-left: 30px;
+    }
+
+    .pencetgan {
+        margin-left: 80px;
+    }
+}
+
+/* HP Kekinian - Tablet Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    #content {
+        float: none;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    aside {
+        float: none;
+        width: 95%;
+        font-size: 120%;
+        margin: 0 auto;
+    }
+
+    .more a {
+        padding-left: 210px;
+    }
+
+    .pencetgan {
+        margin-left: 70px;
+    }
+}

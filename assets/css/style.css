@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0 !important;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 41%, rgba(43, 43, 43, 1) 100%);
+    color: white;
+    padding: 3rem 3rem 16rem 3rem;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.celengan {
+    width: 10%;
+}
+
+.webTitle {
+    font-size: 300%;
+
+}
+
+
+/* Main */
+
+main {
+    margin: 20rem 16rem 16rem 16rem;
+    overflow: auto;
+}
+
+
+#content {
+    float: left;
+    width: 75%;
+    padding: 0;
+}
+
+.card {
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    border-radius: 2rem;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.budget_app {
+    width: 100%;
+}
+
+.budget_details {
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(36, 42, 45);
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid white;
+
+}
+
+.budget_title {
+    font-size: 150%;
+    color: grey;
+}
+
+.budget_value {
+    margin-top: 15px;
+    font-size: 250%;
+    /* padding-bottom: 300px; */
+}
+
+.linecurve {
+    width: 100%;
+    overflow: hidden;
+}
+
+.incex_card {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+    /* padding: 20px;
+    margin-top: 20px; */
+}
+
+.vertical_line {
+    display: inline-block;
+    border-left: 2px solid #ccc;
+    margin: 10px 10px;
+    height: 125px;
+}
+
+.budget_income,
+.budget_expense {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 1.5rem 0;
+    flex: 1;
+    font-size: 120%;
+}
+
+.budget-income_value,
+.budget-expense_value {
+    padding: 1rem 0;
+    margin-bottom: 5px;
+}
+
+.budget-income_value {
+    color: green;
+}
+
+.budget-expense_value {
+    color: red;
+}
+
+.incex_card input {
+    display: none;
+}
+
+.income-btn,
+.expense-btn {
+    text-align: center;
+    cursor: pointer;
+    color: #b5b5b5;
+    padding: 0.5rem;
+    margin: 10px;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+}
+
+.button_expense input:checked+label {
+    color: white;
+    background-color: red;
+}
+
+.button_income input:checked+label {
+    color: white;
+    background-color: green;
+}
+
+.computation {
+    margin-top: -5rem;
+    font-size: 100%;
+}
+
+input::placeholder {
+    font-size: 120%;
+}
+
+.computation div {
+    padding: 1rem;
+}
+
+.computation div {
+    padding: 1rem;
+}
+
+.computation div:first-child {
+    margin-top: 1rem;
+}
+
+
+.computation input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 1rem;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid grey;
+}
+
+.computation label {
+    position: relative;
+    left: 7.2rem;
+}
+
+.table_incex {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.table_incex h2 {
+    text-align: center;
+}
+
+.income {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.expenses {
+    float: left;
+    width: 45%;
+}
+
+.income_title {
+    color: green;
+}
+
+.expenses_title {
+    color: red;
+}
+
+.pencetgan {
+    margin-left: 8rem;
+    margin-top: -2rem;
+}
+
+.right {
+    float: right;
+}
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child {
+    border-top: 1px solid #e7e7e7;
+}
+
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.item_description {
+    float: left;
+}
+
+.item_value {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.income .item_value,
+.income .item_delete-btn {
+    color: green;
+}
+
+.expenses .item_value,
+.expenses .item_percentage,
+.expenses .item_delete-btn {
+    color: red;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item_delete {
+    float: left;
+}
+
+.item_delete-btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item_delete-btn:focus {
+    outline: none;
+}
+
+.item_delete-btn:active {
+    transform: translateY(2px);
+}
+
+.item:hover .item_delete-btn {
+    display: block;
+}
+
+.item:hover .item_value {
+    transform: translateX(-20px);
+}
+
+aside {
+    float: right;
+    width: 24%;
+    margin-left: 13px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.profilepic {
+    border-radius: 50%;
+}
+
+.more a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+.more .fab {
+    padding-right: 10px;
+}
+
+.linkedin:hover {
+    color: #007bb5;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.instagram:hover {
+    color: #5b0f6e;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+/* Footer */
+
+footer {
+    padding: 2rem;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+}
+
+/* @media (max-width: 768px) {
+    #content {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0;
+
+    }
+
+} */
+
+.pencetgan button {
+    font-size: 1rem;
+    padding: 1em;
+    background: none;
+    border-image: none;
+    cursor: pointer;
+}
+
+.addbtn {
+    border-left-width: 3px;
+    padding-right: 10px;
+}
+
+.clear {
+    padding-right: 10px;
+    color: white;
+}
+
+.pencetgan button:first-child {
+    margin-left: 10px;
+    color: white;
+    border-radius: 2em;
+    border: 1px solid red;
+    background-color: red;
+    box-shadow: 0 5px 0 darkred
+}
+
+.pencetgan button:last-child {
+    margin-left: 10px;
+    border-radius: 2em;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    box-shadow: 0 5px 0 darkgreen
+}
+
+.pencetgan button:first-child:hover {
+    background-color: hsl(0, 96%, 45%);
+}
+
+.pencetgan button:last-child:hover {
+    background-color: #037c03;
+}
+
+.pencetgan button:active {
+    box-shadow: none;
+    top: 5px;
+}

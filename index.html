@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <img src="assets/img/logo.jpg" class="celengan" alt="celengan">
+            <h1 class="webTitle">Budget App</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="content" class="card">
+            <div class="budget_app">
+                <div class="budget_details">
+                    <div class="current_balance">
+                        <div class="budget_title">
+                            Current Balance
+                        </div>
+                        <div class="budget_value">
+                            Rp. 10.000.000</div>
+                        <img src="assets/img/line.png" class="linecurve" alt="">
+
+                    </div>
+                </div>
+                <div class="incex_card">
+                    <div class="budget_income">
+                        <div class="budget-income_text">
+                            Total Income
+                        </div>
+                        <div class="budget-income_value">
+                            + Rp. 5.000.000
+                        </div>
+                        <div class="button_income">
+                            <input type="radio" name="type" value="inc" id="incomebtn" onclick="getButtonValue();"
+                                checked>
+                            <label for="incomebtn" class="income-btn">+ Add Income</label>
+                        </div>
+                    </div>
+                    <div class="vertical_line"></div>
+                    <div class="budget_expense">
+                        <div class="budget-expense_text">
+                            Total Expense
+                        </div>
+                        <div class="budget-expense_value">
+                            - Rp. 500.000
+                        </div>
+                        <div class="button_expense">
+                            <input type="radio" name="type" value="exp" id="expensebtn" onclick="getButtonValue();">
+                            <label for="expensebtn" class="expense-btn">+ Add Expense</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="computation">
+                    <div class="desc_input">
+                        <label class="labelinput" for="input-desc">Your Income/Expense Description</label>
+                        <input id="input-desc" type="text" class="input_description" placeholder="Salary">
+                    </div>
+                    <div class="value_input">
+                        <label class="labelinput" for="input-val">Value of Income/Expense</label>
+                        <input id="input-val" type="number" class="input_value" placeholder="Rp. 100.000">
+                    </div>
+                    <div class="list_incex"></div>
+                </div>
+                <div class="pencetgan">
+
+                    <button><i class="fas fa-trash clear"></i>Clear</button>
+                    <button><i class="fas fa-check addbtn"></i>Add</button>
+                </div>
+
+
+                <div class="table_incex clearfix">
+                    <div class="income">
+                        <h2 class="income_title">Income</h2>
+                        <div class="income_list">
+                            <!-- <div class="item clearfix" id="income-0">
+                                <div class="item_description">Duit Jajan</div>
+                                <div class="right clearfix">
+                                    <div class="item_value">+ Rp. 5.000.000</div>
+                                    <div class="item_delete">
+                                        <button class="item_delete-btn">
+                                            <i class="far fa-times-circle"></i></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="income-1">
+                                <div class="item_description">Sold car</div>
+                                <div class="right clearfix">
+                                    <div class="item_value">+ 1,500.00</div>
+                                    <div class="item_delete">
+                                        <button class="item_delete-btn"><i class="far fa-times-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="expenses">
+                        <h2 class="expenses_title">Expenses</h2>
+                        <div class="expenses_list">
+
+                            <!-- <div class="item clearfix" id="expense-0">
+                                <div class="item_description">Beli Padang Ceban</div>
+                                <div class="right clearfix">
+                                    <div class="item_value">- Rp. 10.000</div>
+                                    <div class="item_delete">
+                                        <button class="item_delete-btn"><i class="far fa-times-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item clearfix" id="expense-1">
+                                <div class="item_description">Grocery shopping</div>
+                                <div class="right clearfix">
+                                    <div class="item_value">- 435.28</div>
+                                    <div class="item_delete">
+                                        <button class="item_delete-btn"><i class="far fa-times-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <aside class="profile card">
+            <h2>Man Behind This App</h2>
+            <img src="https://instagram.fcgk18-2.fna.fbcdn.net/v/t51.2885-19/s150x150/18298511_1873688496181207_5500556528563781632_a.jpg?_nc_ht=instagram.fcgk18-2.fna.fbcdn.net&_nc_cat=107&_nc_ohc=mm7JrJbvS28AX9gOq6B&oh=14694a9b5c5e3a9200e9d00f93f0cced&oe=5F223BB4"
+                class="profilepic" alt="penampakan">
+            <p>Nurul Huda Sulton Aulia</p>
+            <div class="more">
+                <p>Find More About Him In :</p>
+                <a class="linkedin" href="https://www.linkedin.com/in/nhsltn/" target="_blank"><i
+                        class="fab fa-linkedin"></i>Nurul Huda
+                    Sulton</a>
+                <a class="twitter" href="https://twitter.com/nhsulton" target="_blank"><i
+                        class="fab fa-twitter"></i>@nhsulton</a>
+                <a class="instagram" href="https://www.instagram.com/nhsulton/?hl=id" target="_blank"><i
+                        class="fab fa-instagram"></i>nhsulton</a>
+                <a class="facebook" href="https://www.facebook.com/nhsulton" target="_blank"><i
+                        class="fab fa-facebook-square"></i>Nurul
+                    Huda Sulton
+                </a>
+                <p></p>
+
+            </div>
+
+        </aside>
+    </main>
+
+
+
+    <footer>
+        <p>Disuruh ngumpulin tugas ama Dicoding. &#169; 2020, Nurul Huda Sulton</p>
+    </footer>
+
+    <script src="assets/js/budget.js"></script>
+</body>
+
+</html>
